@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="user">
+            <img src="https://avatars.githubusercontent.com/u/141803481?v=4" id="myImg" alt="">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+            <script>
+                
+                var modal = document.getElementById("myModal");
+
+
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+             
+                var span = document.getElementsByClassName("close")[0];
+
+               
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+
+            <h3 class="name">Harsh</h3>
+    
+            <a href="https://github.com/harshsingh1605" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harsh-singh-3779b0284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="harshsingh8150@gmail.com" target="_blank"> <i class="fa fa-envelope"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Connect</a></li>
+  
+                <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
+                    <span class="d-block-light d-none"><a> <i class="fa fa-moon-o"></i></a></span>
+                    
+                   </button>
+            </ul>
+            
+        </nav>
+
+    </header>
+
+
+    <div id="menu" class="fas fa-bars"></div>
+
+
+    <section class="home" id="home">
+
+          
+        <h3>Hello World !</h3>
+        <h1>I'M <span >Harsh Singh</span></h1>
+
+        <p  >
+            I am Engineering Student, App Developer and UI Designer ! &nbsp;
+            I'm Always Ready For Participation In Hackathons!
+            Runnerup in 3 Contests BIZTHON'23, HACKBATTLE'23, HEXATHON'23
+        </p>
+        <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+        
+
+    </section>
+
+    
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> Let Me<span> Introduce</span> MySelf </h1>
+
+        <div class="row">
+
+            <div class="info">
+
+                <h3> <span> Name : </span>Harsh singh</h3>
+                <h3> <span> Date of Birth : </span> 24<sup>th</sup>&nbsp; December 2004</h3>
+                <h3> <span> Qualification : </span> B. Tech (Pursuing) </h3>
+                <h3> <span> Email : </span> harshsingh8150@gmail.com </h3>
+                <br><br><br><br><br><br><br><br><br><br><br>
+
+                <a href="cv.pdf" target="_blank"><button class="btn"> Download CV <i class="fas fa-download"></i>
+                    </button></a>
+                   
+            </div>
+
+
+            <div class="counter">
+
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div clas="info">
+                            <span>C++</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                  
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>UI design</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML & CSS</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line JavaScript">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+   
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> My <span>Education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="timeline">
+                <div class="container left">
+                    <div class="date">Aug 2027<br>IIT<br>MADRAS</div>
+
+
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>B. Tech </h2>
+                        <p>
+                            Computer Science and Engineering <br>
+                            INDIAN INSTITUTE OF TECHNOLOGY , MADRAS
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="date">May 2023<br>CBSE Board</div>
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>S.S.C</h2>
+                        <p>
+                            <i>Science</i> <br>
+                            Durga Prasad Vidya Niketan 
+                        </p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="date">May 2021<br>CBSE Board</div>
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <div class="content">
+                        <h2>H.S.C.</h2>
+                        <p>
+
+                            Durga Prasad Vidya Niketan 
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
+
+    <section class="portfolio" id="portfolio">
+
+ 
+
+  
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Contact</span> Me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">Contact Info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> harshsingh8150@gmail.com </h3>
+
+                    <h3>  <i class="fas fa-map-marker-alt"></i> INDIAN INSTITUTE OF TECHNOLOGY (IIT), MADRAS
+  </h3>
+                </div>
+
+            </div>
+
+            <form action="https://formsubmit.co/el/raduhu" method="POST" id="contactForm">
+
+                <input type="text" placeholder="name" class="box" name="Name" id="Name">
+                <input type="email" placeholder="email" class="box" name="Email" id="Email">
+                <input type="text" placeholder="subject" class="box" name="subject" id="Subject">
+                <input class="box message" placeholder="Message" cols="30" rows="10" name="Message" id="Msg">
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+        
+        
+
+        </div>
+        <div class="fot">      
+           <h3 class="fa fa-copyright"> Copyright Harsh Singh</h3>
+            <a href="https://www.instagram.com/harsh_13453_/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/harsh-singh-3779b0284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/harsh_sing20766" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+        </div>
+
+    </section>
+
+   
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ 
+    <script src="js/script.js"></script>
+    <script>
+        $("#mybtn").on("click",function(){
+  window.alert("sometext");
+  $('link[href="css/styles.css"]').attr('link[href="css/styles2.css"]');
+});
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+
+</html>
